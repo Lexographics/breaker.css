@@ -16,6 +16,8 @@ Breaker.css is an auxiliary library for web projects
 include breaker.css and breaker.js files in the **<head>** tag
 
 
+## Testing
+To see the components of breaker.css, you can either run [test.html](test.html) file in a local server or visit [https://lexographics.github.io/breaker.css/test]
 
 
 ## Documentation
