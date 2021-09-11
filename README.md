@@ -37,13 +37,13 @@ include breaker.css and breaker.js files in the **<head>** tag
    ```
 
 - Outline
-```css
-   .bg- classes already sets outline colors but you can override it with:
-   
-      .outline-dark
-      .outline-white
+   ```css
+      .bg- classes already sets outline colors but you can override it with:
+      
+         .outline-dark
+         .outline-white
 
-      .outline-none or .no-outline /* both classes are same */
+         .outline-none or .no-outline /* both classes are same */
    ```
 
 
