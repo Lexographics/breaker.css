@@ -1,0 +1,98 @@
+:root {
+   --color-gray:   #4d5153;  --color-gray-darker:   #363636;  --color-gray-brighter:   #5b5d5e;
+   --color-black:  #1c2833;  --color-black-darker:  #010101;  --color-black-brighter:  #4e5a66;
+   --color-cyan:   #48c9b0;  --color-cyan-darker:   #3ba18d;  --color-cyan-brighter:   #64d6bf;
+   --color-green:  #1abc9c;  --color-green-darker:  #0f8870;  --color-green-brighter:  #4cd6bb;
+   --color-red:    #e74c3c;  --color-red-darker:    #af3a2d;  --color-red-brighter:    #e66456;
+   --color-orange: #d35400;  --color-orange-darker: #a84300;  --color-orange-brighter: #e46714;
+   --color-white:  #CDCDCD;  --color-white-darker:  #b4b4b4;  --color-white-brighter:  #e7e7e7;
+}
+
+
+
+b-btn {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+
+
+b-btn {
+   display: block;
+
+   padding: 15px 32px;
+   background-color: var(--color-gray);
+   color: white;
+   width: max-content;
+
+   border-radius: 6px;
+}
+
+
+
+
+/* bg- attributes are like themes. you can give it to any item. not just buttons */
+.bg-dark {
+   background-color: var(--color-gray);
+   color: var(--color-white);
+   outline: 3px solid var(--color-black);
+}
+.bg-dark:hover { background-color: var(--color-gray-darker); }
+.bg-dark:active { background-color: var(--color-black); }
+
+
+
+
+.bg-white {
+   background-color: var(--color-white-brighter);
+   color: var(--color-black-darker);
+   outline: 3px solid var(--color-white-brighter);
+}
+.bg-white:hover { background-color: var(--color-white); }
+.bg-white:active { background-color: var(--color-white-darker); }
+
+
+
+/* outline- attributes */
+.outline-none {
+   outline: none;
+}
+.no-outline {
+   outline: none;
+}
+.outline-dark {
+   outline: 3px solid var(--color-black);
+}
+.outline-white {
+   outline: 3px solid var(--color-white-brighter);
+}
+
+
+/* border radius */
+ .round-0   { border-radius:   0%; }
+.round-10   { border-radius:  10%; }
+.round-20   { border-radius:  20%; }
+.round-30   { border-radius:  30%; }
+.round-40   { border-radius:  40%; }
+.round-50   { border-radius:  50%; }
+.round-60   { border-radius:  60%; }
+.round-70   { border-radius:  70%; }
+.round-80   { border-radius:  80%; }
+.round-90   { border-radius:  90%; }
+.round-100  { border-radius: 100%; }
+
+ .round-0px { border-radius:  0px; }
+ .round-2px { border-radius:  2px; }
+ .round-4px { border-radius:  4px; }
+ .round-6px { border-radius:  6px; }
+ .round-8px { border-radius:  8px; }
+.round-10px { border-radius: 10px; }
+.round-12px { border-radius: 12px; }
+.round-14px { border-radius: 14px; }
+.round-16px { border-radius: 16px; }
+.round-18px { border-radius: 18px; }
+.round-20px { border-radius: 20px; }
