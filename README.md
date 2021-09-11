@@ -17,7 +17,7 @@ include breaker.css and breaker.js files in the **<head>** tag
 
 
 ## Testing
-To see the components of breaker.css, you can either run [test.html](test.html) file in a local server or visit [https://lexographics.github.io/breaker.css/test]
+To see the components of breaker.css, you can run [test.html](test.html) file in a local server
 
 
 ## Documentation
