@@ -1,7 +1,7 @@
 # breaker.css - css bundle & Custom Elements for Web
 
 Breaker.css is an auxiliary library for web projects
-
+![Representation of breaker.css library]()
 
 
 ## How To include breaker.css to your project
@@ -42,8 +42,15 @@ include breaker.css and breaker.js files in the **<head>** tag
       
          .outline-dark
          .outline-white
+         .outline-green
+         .outline-red
 
          .outline-none or .no-outline /* both classes are same */
+   ```
+   * Outline width:
+   ```css
+      .outline-10   (0, 2, 4, 6 ... 10) /* Sets outline width in % */
+      .outline-10px (0, 2, 4, 6 ... 10) /* Sets outline width in px */
    ```
 
 
