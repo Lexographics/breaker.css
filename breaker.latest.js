@@ -2,7 +2,32 @@ class Btn extends HTMLAnchorElement {
    constructor() {
       super();
       this.onclick = function() {
-         window.location.href = `${this.getAttribute('href')}` || "#";
+         switch(this.getAttribute('target')) {
+            case '_blank': {
+
+            }
+            case '_parent': {
+
+            }
+            case '_top': {
+
+            }
+            default: /* or _self */ {
+               //window.location.href = `${this.getAttribute('href')}` || "#";
+            }
+
+         }
+         console.log(this.getAttribute('_target'));
+         window.open( this.getAttribute('href'), this.getAttribute('target') || '_self' )
+      }
+
+      this.oncontextmenu = function(e) {
+         console.log(e);
+      }
+      
+
+      this.ontouchmove = function() {
+         void('hey');
       }
    }
 

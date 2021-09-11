@@ -20,10 +20,10 @@ include breaker.css and breaker.js files in the **<head>** tag
 
 ## Documentation
 
-**Custom elements:**
-- b-btn
+**Elements:**
+- Button
    ```html
-      <b-btn href="/page" class="bg-dark"> Button Text </b-btn>
+      <a href="/page" class="btn bg-dark"> Button Text </a>
    ```
 
 
@@ -32,6 +32,8 @@ include breaker.css and breaker.js files in the **<head>** tag
    ```css
       .bg-dark  /* theme with dark  colors */
       .bg-white /* theme with light colors */
+      .bg-green /* theme with green colors */
+      .bg-red   /* theme with red colors */
    ```
 
 - Outline

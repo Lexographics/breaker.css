@@ -9,6 +9,8 @@
 }
 
 
+html { scroll-behavior: smooth; }
+
 
 b-btn {
    -webkit-touch-callout: none;
@@ -20,16 +22,31 @@ b-btn {
 }
 
 
-
+/* using b-btn element is not recommended */
 b-btn {
    display: block;
 
    padding: 15px 32px;
+   margin: 0px 3px;
    background-color: var(--color-gray);
    color: white;
    width: max-content;
 
    border-radius: 6px;
+}
+
+.btn {
+   display: block;
+
+   padding: 15px 32px;
+   margin: 0px 3px;
+   background-color: var(--color-gray);
+   color: white;
+   width: max-content;
+
+   border-radius: 6px;
+
+   text-decoration: none;
 }
 
 
@@ -50,10 +67,28 @@ b-btn {
 .bg-white {
    background-color: var(--color-white-brighter);
    color: var(--color-black-darker);
-   outline: 3px solid var(--color-white-brighter);
+   outline: 3px solid var(--color-white-darker);
 }
 .bg-white:hover { background-color: var(--color-white); }
 .bg-white:active { background-color: var(--color-white-darker); }
+
+
+.bg-green {
+   background-color: var(--color-green-brighter);
+   color: var(--color-black-darker);
+   outline: 3px solid var(--color-green-darker);
+}
+.bg-green:hover { background-color: var(--color-green); }
+.bg-green:active { background-color: var(--color-green-darker); }
+
+
+.bg-red {
+   background-color: var(--color-red-brighter);
+   color: var(--color-black-darker);
+   outline: 3px solid var(--color-red-darker);
+}
+.bg-red:hover { background-color: var(--color-red); }
+.bg-red:active { background-color: var(--color-red-darker); }
 
 
 
