@@ -10,6 +10,7 @@
 
 
 html { scroll-behavior: smooth; }
+* { box-sizing: border-box; }
 
 
 b-btn {
@@ -35,7 +36,7 @@ b-btn {
    border-radius: 6px;
 }
 
-.btn {
+.btn, .children-btn > *, .children-recursive-btn * {
    display: block;
 
    padding: 15px 32px;
@@ -51,49 +52,82 @@ b-btn {
 
 
 
+/* Navbar */
+.navbar {
+   height: auto;
+   width: 100%;
+   background-color: var(--color-gray-darker);
+   outline: none !important;
+}
+.navbar > .navbar-header {
+   display: inline;
+}
+.navbar > .navbar-header > * {
+   display: inline-block;
+}
+
+
+.navbar > .navbar-content {
+   display: inline;
+}
+.navbar > .navbar-content > * {
+   display: inline-block;
+}
+
+/*.navbar *:not(span, p, a) {
+   padding-top: 0;
+   padding-bottom: 0;
+}*/
+
+
+
+
 
 /* bg- attributes are like themes. you can give it to any item. not just buttons */
-.bg-dark {
+.bg-transparent, .children-bg-transparent > *, .children-recursive-bg-transparent {
+   background-color: #FFFFFF00;
+   color: white;
+   outline: none;
+}
+
+.bg-dark, .children-bg-dark > *, .children-recursive-bg-dark {
    background-color: var(--color-gray);
    color: var(--color-white);
    outline: 3px solid var(--color-black);
 }
-.bg-dark:hover { background-color: var(--color-gray-darker); }
-.bg-dark:active { background-color: var(--color-black); }
+.bg-dark:hover:not(nav, body)  { background-color: var(--color-gray-darker); }
+.bg-dark:active:not(nav, body) { background-color: var(--color-black); }
 
 
-
-
-.bg-white {
+.bg-white, .children-bg-white > *, .children-recursive-bg-white {
    background-color: var(--color-white-brighter);
    color: var(--color-black-darker);
    outline: 3px solid var(--color-white-darker);
 }
-.bg-white:hover { background-color: var(--color-white); }
-.bg-white:active { background-color: var(--color-white-darker); }
+.bg-white:hover:not(nav, body)  { background-color: var(--color-white); }
+.bg-white:active:not(nav, body) { background-color: var(--color-white-darker); }
 
 
-.bg-green {
+.bg-green, .children-bg-green > *, .children-recursive-bg-green {
    background-color: var(--color-green-brighter);
    color: var(--color-black-darker);
    outline: 3px solid var(--color-green-darker);
 }
-.bg-green:hover { background-color: var(--color-green); }
-.bg-green:active { background-color: var(--color-green-darker); }
+.bg-green:hover:not(nav, body)  { background-color: var(--color-green); }
+.bg-green:active:not(nav, body) { background-color: var(--color-green-darker); }
 
 
-.bg-red {
+.bg-red, .children-bg-red > *, .children-recursive-bg-red {
    background-color: var(--color-red-brighter);
    color: var(--color-black-darker);
    outline: 3px solid var(--color-red-darker);
 }
-.bg-red:hover { background-color: var(--color-red); }
-.bg-red:active { background-color: var(--color-red-darker); }
+.bg-red:hover:not(nav, body)  { background-color: var(--color-red); }
+.bg-red:active:not(nav, body) { background-color: var(--color-red-darker); }
 
 
 
 /* outline- attributes */
-.outline-none { outline: none; }
 .no-outline { outline: none; }
 
 .outline-dark  { outline: 3px solid var(--color-black);          }
@@ -102,7 +136,7 @@ b-btn {
 .outline-red   { outline: 3px solid var(--color-red-brighter);   }
 
 /* outline width */
-.outline-none { outline-width: 0px; }
+.outline-none, .children-outline-none > *, .children-recursive-outline-none * { outline: none }
 .outline-default { outline-width: 3px; }
 
 .outline-2  { outline-width:  2%; }
@@ -120,17 +154,17 @@ b-btn {
 
 
 /* border radius */
- .round-0   { border-radius:   0%; }
-.round-10   { border-radius:  10%; }
-.round-20   { border-radius:  20%; }
-.round-30   { border-radius:  30%; }
-.round-40   { border-radius:  40%; }
-.round-50   { border-radius:  50%; }
-.round-60   { border-radius:  60%; }
-.round-70   { border-radius:  70%; }
-.round-80   { border-radius:  80%; }
-.round-90   { border-radius:  90%; }
-.round-100  { border-radius: 100%; }
+ .round-0,  .children-round-0  > *,  .children-recursive-round-0   * { border-radius:   0%; }
+.round-10,  .children-round-10 > *,  .children-recursive-round-10  * { border-radius:  10%; }
+.round-20,  .children-round-20 > *,  .children-recursive-round-20  * { border-radius:  20%; }
+.round-30,  .children-round-30 > *,  .children-recursive-round-30  * { border-radius:  30%; }
+.round-40,  .children-round-40 > *,  .children-recursive-round-40  * { border-radius:  40%; }
+.round-50,  .children-round-50 > *,  .children-recursive-round-50  * { border-radius:  50%; }
+.round-60,  .children-round-60 > *,  .children-recursive-round-60  * { border-radius:  60%; }
+.round-70,  .children-round-70 > *,  .children-recursive-round-70  * { border-radius:  70%; }
+.round-80,  .children-round-80 > *,  .children-recursive-round-80  * { border-radius:  80%; }
+.round-90,  .children-round-90 > *,  .children-recursive-round-90  * { border-radius:  90%; }
+.round-100, .children-round-100 > *, .children-recursive-round-100 * { border-radius: 100%; }
 
  .round-0px { border-radius:  0px; }
  .round-2px { border-radius:  2px; }
@@ -143,3 +177,9 @@ b-btn {
 .round-16px { border-radius: 16px; }
 .round-18px { border-radius: 18px; }
 .round-20px { border-radius: 20px; }
+
+
+/* float */
+.float-right {
+   float: right;
+}
