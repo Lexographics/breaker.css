@@ -34,9 +34,10 @@ Classes:
       .bg-white /* theme with light colors */
    ```
 
+- outline
 ```css
-.bg- classes``` already sets outline colors but you can change it with:
-   ```css
+   .bg- classes already sets outline colors but you can change it with:
+   
       .outline-dark
       .outline-white
 
