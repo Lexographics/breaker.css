@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+   <!-- css for test.html -->
+   <link rel="stylesheet" href="test.style.css">
+   
+   <title> Breaker.css Tests </title>
+
+
+   <link rel="stylesheet" href="breaker.latest.css">
+   <script src="breaker.latest.js" defer></script>
+</head>
+<body class="bg-white">
+
+   <nav class="navbar bg-dark" style="height: 4rem;">
+      
+      <div class="navbar-header">
+         <a href="#bottom" class="btn bg-transparent"> Go To Bottom </a>
+      </div>
+      
+      
+      
+      <div class="navbar-content">
+         <a href="" class="bg-dark btn outline-none round-0"> Hey </a>
+         <a href="" class="bg-dark btn outline-none round-0"> Hey </a>
+         <a href="" class="bg-dark btn outline-none round-0"> Hey </a>
+         <a href="" class="bg-dark btn outline-none round-0"> Hey </a>
+      </div>
+
+
+
+</nav>
+
+
+   <h1>Breaker.css</h1>
+   <hr><br>
+
+
+   
+   <!-- display items -->
+   <main>
+
+      <h2> btn Class </h2>
+      <hr>
+      
+      <h4> .btn </h4>
+      <h5> .bg-dark/.bg-white/.bg-green/.bg-red </h5>
+      <div style="display: flex; justify-content: center;">
+
+         <a href="#bottom" class="btn bg-dark "> Go Bottom </a>
+         <a href="#bottom" class="btn bg-white"> Go Bottom </a>
+         <a href="#bottom" class="btn bg-green"> Go Bottom </a>
+         <a href="#bottom" class="btn bg-red  "> Go Bottom </a>
+         
+      </div>
+      <br>
+      <hr>
+
+      <h5> with random outline colors </h5>
+      <div style="display: flex; justify-content: center;">
+
+         <a href="#bottom" class="btn bg-dark  outline-white"> Go Bottom </a>
+         <a href="#bottom" class="btn bg-white outline-green"> Go Bottom </a>
+         <a href="#bottom" class="btn bg-green outline-red"> Go Bottom </a>
+         <a href="#bottom" class="btn bg-red   outline-dark"> Go Bottom </a>
+         
+      </div>
+
+      <br>
+      <hr>
+
+      <h4>Input Field</h4>
+      <div style="display: flex; justify-content: center;">
+
+         <form action="" method="get">
+            <input type="text" name="q" placeholder="Enter something" class="btn bg-dark">
+            <input type="button" value="Submit" class="btn bg-dark">
+         </form>
+
+      </div>
+      
+      <div style="height: 2000px;"></div>
+
+      <a href="#top" class="btn bg-white" style="margin: 0 auto;"> Click to go top </a>
+
+      <br>
+
+      
+      <a id="bottom"></a>
+
+   </main>
+</body>
+</html>
