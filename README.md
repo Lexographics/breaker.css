@@ -1,7 +1,7 @@
 # breaker.css - css bundle & Custom Elements for Web
 
 Breaker.css is an auxiliary library for web projects
-![Representation of breaker.css library]()
+![Representation of breaker.css library](https://raw.githubusercontent.com/Lexographics/breaker.css/main/img/repr.png)
 
 
 ## How To include breaker.css to your project
