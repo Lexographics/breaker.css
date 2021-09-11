@@ -20,23 +20,23 @@ include breaker.css and breaker.js files in the **<head>** tag
 
 ## Documentation
 
-Custom elements:
+**Custom elements:**
 - b-btn
    ```html
       <b-btn href="/page" class="bg-dark"> Button Text </b-btn>
    ```
 
 
-Classes:
+**Classes:**
 - Background
    ```css
       .bg-dark  /* theme with dark  colors */
       .bg-white /* theme with light colors */
    ```
 
-- outline
+- Outline
 ```css
-   .bg- classes already sets outline colors but you can change it with:
+   .bg- classes already sets outline colors but you can override it with:
    
       .outline-dark
       .outline-white
@@ -45,7 +45,7 @@ Classes:
    ```
 
 
-- round
+- Rounding
    ```css
       .round-10   (0, 10, 20, ... 100) /* Rounds borders % */
       .round-10px (0, 2, 4, 6 ... 20) /* Rounds borders in px */
