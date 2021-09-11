@@ -28,14 +28,6 @@ To see the components of breaker.css, you can run [test.html](test.html) file in
       <a href="/page" class="btn bg-dark"> Button Text </a>
    ```
 
-**Usage of keywords**
-- **'children'** keyword on any class means apply it to children of the element
-- **'children-recursive'** keyword on any class means apply it to children of the element recursively
-   ```css
-      .bg-dark                    /* applies to self */
-      .children-bg-dark           /* applies to children */
-      .children-recursive-bg-dark /* applies to children(recursive, applies to children of elements' children too) */
-   ```
 
 **Classes:**
 - Background
